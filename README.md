@@ -3,7 +3,8 @@
 
 Personal configurations on *nix systems
 
-### YouCompleteMe
+## VIM
+#### YouCompleteMe
 
 Install CMake and compile it.
 

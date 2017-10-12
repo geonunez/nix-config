@@ -1,0 +1,18 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "files.insertFinalNewline": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "python.pythonPath": "${workspaceRoot}/env/bin/python",
+    "editor.minimap.enabled": false,
+    "window.openFoldersInNewWindow": "on",
+    "window.restoreWindows": "all",
+    "editor.wordWrap": "on",
+    "workbench.editor.revealIfOpen": true,
+    "workbench.startupEditor": "none"
+}
