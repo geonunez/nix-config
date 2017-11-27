@@ -2,10 +2,14 @@ set nocompatible              " be iMproved, required
 syntax on
 set number
 filetype off
- 
+set expandtab
+
 " *** Ruler ***
 highlight ColorColumn ctermbg=lightgrey guibg=lightgrey
 set cc=80,100
+
+" *** Remove unwanted spaces on save ***
+autocmd BufWritePre * %s/\s\+$//e
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -21,6 +25,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'ternjs/tern_for_vim'
 Plugin 'godlygeek/tabular'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'vim-node'
+Plugin 'jelera/vim-javascript-syntax'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -45,19 +51,18 @@ au BufNewFile,BufRead *.py
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
-    \ set textwidth=79 |
-    \ set expandtab |
     \ set autoindent |
-    \ set fileformat=unix 
+    \ set fileformat=unix
 
 " *** JS, HTML and CSS Styles ***
-au BufNewFile,BufRead *.js, *.html, *.css
+au BufNewFile,BufRead *.js
     \ set tabstop=2 |
     \ set softtabstop=2 |
-    \ set shiftwidth=2
+    \ set shiftwidth=2 |
+    \ set autoindent
 
 " *** Shortcuts ***
-" Open NERDTree with 'F2'
-map <F2> :NERDTreeToggle<CR>
+" Open NERDTree with 'F3'
+map <F3> :NERDTreeToggle<CR>
 " Show buffers with '\b'
 nnoremap <Leader>b :ls<CR>:b<Space>

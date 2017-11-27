@@ -14,5 +14,8 @@
     "window.restoreWindows": "all",
     "editor.wordWrap": "on",
     "workbench.editor.revealIfOpen": true,
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Monokai",
+    "extensions.ignoreRecommendations": false
 }
